@@ -19,7 +19,7 @@ public class Purchase implements Serializable{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    private Flower flower;
+    private Ball ball;
     @ManyToOne
     private Buyer buyer;
     private int count;
@@ -39,12 +39,12 @@ public class Purchase implements Serializable{
         this.id = id;
     }
 
-    public Flower getFlower() {
-        return flower;
+    public Ball getFlower() {
+        return ball;
     }
 
-    public void setFlower(Flower flower) {
-        this.flower = flower;
+    public void setBall(Ball ball) {
+        this.ball = ball;
     }
 
     public Buyer getBuyer() {

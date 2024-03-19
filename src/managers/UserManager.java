@@ -46,7 +46,8 @@ public class UserManager {
         List<User> users = getDatabaseManager().getListUsers();
         System.out.println("----- Buyer list -----");
         for (int i = 0; i < users.size(); i++) {
-            System.out.println(i+1 + ". Client: " + users.get(i).getBuyer().getFirstname() + " " + users.get(i).getBuyer().getLastname() + " Balance: " + users.get(i).getBuyer().getBalance() + " Euro");
+            System.out.println(i+1 + ". Client: " + users.get(i).getBuyer().getFirstname() + " " 
+        + users.get(i).getBuyer().getLastname() + " Balance: " + users.get(i).getBuyer().getBalance() + " Euro");
         }
     }
     
@@ -84,7 +85,7 @@ public class UserManager {
         System.out.println("1. Delete role:");
         System.out.println("2. Add role:");
         int chooseNumber = scanner.nextInt();
-        .
+       
         
         System.out.println("Choose the number of the user whose role you want to change:");
         int number = scanner.nextInt(); 

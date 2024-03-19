@@ -16,8 +16,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "flowers")
-public class Flower implements Serializable{
+@Table(name = "balls")
+public class Ball implements Serializable{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
@@ -27,7 +27,7 @@ public class Flower implements Serializable{
     @Temporal(TemporalType.DATE)
     private Date discountDate;
     
-    public Flower() {
+    public Ball() {
     }
 
     public Long getId() {
